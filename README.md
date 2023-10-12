@@ -1,2 +1,2 @@
-# passGenerator
-Eandom password generator created with Html, Css, Bootstrap and Javascript
+# PassGenerator
+Password Generator using HTML, Css, Bootstrap, Javascript

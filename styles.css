@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+    background-color: #F0F2F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    transition: background-color 0.5s, color 0.5s; /* Transiciones suaves al cambiar los colores */
+}
+
+.container {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.5s; /* Transición suave al cambiar el color del contenedor */
+}
+
+h3 {
+    color: #2E4053;
+}
+
+#boton-generar {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+#boton-generar:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.contraseña-generada {
+    background-color: #FF4500;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+.aviso {
+    background-color: #ccc;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px; /* Tamaño de letra más pequeño */
+    position: absolute;
+    top: 200px; /* Ajusta la posición vertical */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 50% solid;
+}
+
+.footer {
+    background-color: #F7F7F7;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-link {
+    color: #2E4053; /* Color gris oscuro */
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #0056b3; /* Cambio de color en el hover */
+}
+
+/* Estilos en modo oscuro */
+.dark-mode body {
+    background-color: #333333; /* Cambio de color de fondo en modo oscuro */
+    color: #FFFFFF; /* Cambio de color de texto en modo oscuro */
+}
+
+.dark-mode .container {
+    background-color: #444444; /* Cambio de color de fondo de contenedor en modo oscuro */
+}
+
+.dark-mode .aviso {
+    background-color: #666; /* Cambio de color de fondo de aviso en modo oscuro */
+}
+
+.dark-mode #boton-generar {
+    background-color: #008BFF; /* Cambio de color de botón generar en modo oscuro */
+    border-color: #008BFF;
+}
+
+.dark-mode #boton-generar:hover {
+    background-color: #005cb3;
+    border-color: #005cb3;
+}
+
+.dark-mode #boton-copiar {
+    background-color: #0056b3; /* Cambio de color de botón copiar en modo oscuro */
+    border-color: #0056b3;
+}
+
+.dark-mode #boton-copiar:hover {
+    background-color: #003d80;
+    border-color: #003d80;
+}
+
+.dark-mode .footer {
+    background-color: #333333; /* Cambio de color de fondo de footer en modo oscuro */
+}
+
+.dark-mode .footer-link {
+    color: #FFFFFF; /* Cambio de color de enlace en modo oscuro */
+}
+
+.dark-mode .footer-link:hover {
+    color: #80bfff; /* Cambio de color en el hover en modo oscuro */
+}
+
+.dark-mode .dark-mode-button {
+    background-color: #444444; /* Cambio de color de botón modo oscuro en modo oscuro */
+    color: #FFFFFF;
+}
+
+.dark-mode .dark-mode-button:hover {
+    background-color: #333333;
+    border: 1px solid white;
+}
+
+.dark-mode h3 {
+    color: #FFFFFF; /* Cambio de color de la palabra "Longitud" en modo oscuro */
+}
+
+.dark-mode-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #0056b3; /* Color azul oscuro */
+    color: #FFFFFF; /* Color blanco para el texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.dark-mode-button:hover {
+    background-color: #003d80; /* Cambio de color en el hover */
+}
+
+
